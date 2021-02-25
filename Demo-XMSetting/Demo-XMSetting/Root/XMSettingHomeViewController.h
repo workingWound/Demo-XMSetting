@@ -9,7 +9,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface XMSettingAccountItem : XMSettingItem
+
++ (XMSettingAccountItem *)itemWithAccount:(NSInteger )account action:(void (^)())action;
+
+@end
+
+
 @interface XMSettingHomeViewController : XMSettingViewController
+
 
 @end
 

@@ -20,6 +20,7 @@
 		51DBE22225E7547A00D49CAB /* XMSettingRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBE22125E7547A00D49CAB /* XMSettingRootViewController.m */; };
 		51DBE22C25E77E8C00D49CAB /* FMSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBE22B25E77E8C00D49CAB /* FMSettingViewModel.m */; };
 		51DBE23325E7817F00D49CAB /* XMCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBE23225E7817F00D49CAB /* XMCommonTableViewCell.m */; };
+		51DBE26125E7D5FB00D49CAB /* XMSettingAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBE26025E7D5FB00D49CAB /* XMSettingAccountCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		51DBE22B25E77E8C00D49CAB /* FMSettingViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMSettingViewModel.m; sourceTree = "<group>"; };
 		51DBE23125E7817F00D49CAB /* XMCommonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMCommonTableViewCell.h; sourceTree = "<group>"; };
 		51DBE23225E7817F00D49CAB /* XMCommonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMCommonTableViewCell.m; sourceTree = "<group>"; };
+		51DBE25F25E7D5FB00D49CAB /* XMSettingAccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMSettingAccountCell.h; sourceTree = "<group>"; };
+		51DBE26025E7D5FB00D49CAB /* XMSettingAccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMSettingAccountCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +204,8 @@
 			children = (
 				51DBE23125E7817F00D49CAB /* XMCommonTableViewCell.h */,
 				51DBE23225E7817F00D49CAB /* XMCommonTableViewCell.m */,
+				51DBE25F25E7D5FB00D49CAB /* XMSettingAccountCell.h */,
+				51DBE26025E7D5FB00D49CAB /* XMSettingAccountCell.m */,
 			);
 			path = CommonView;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 				51DBE23325E7817F00D49CAB /* XMCommonTableViewCell.m in Sources */,
 				51DBE21925E7546200D49CAB /* XMSettingHomeViewController.m in Sources */,
 				51DBE1E525E751DB00D49CAB /* main.m in Sources */,
+				51DBE26125E7D5FB00D49CAB /* XMSettingAccountCell.m in Sources */,
 				51DBE20F25E753AB00D49CAB /* XMSettingViewController.m in Sources */,
 				51DBE1D725E751D900D49CAB /* SceneDelegate.m in Sources */,
 			);
