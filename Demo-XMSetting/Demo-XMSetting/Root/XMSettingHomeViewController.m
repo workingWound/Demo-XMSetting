@@ -8,9 +8,12 @@
 #import "XMSettingHomeViewController.h"
 #import "XMSettingAccountCell.h"
 #import "FMSettingViewModel.h"
+#import "XMSettingRootViewController.h"
+#import "FMAccount.h"
+
 @implementation XMSettingAccountItem
 
-+ (XMSettingAccountItem *)itemWithAccount:(NSInteger )account action:(void (^)())action
++ (XMSettingAccountItem *)itemWithAccount:(FMAccount *)account action:(void (^)())action;
 {
     XMSettingAccountItem *item = [[XMSettingAccountItem alloc ]init];
     static NSString *cellKey = @"XMSettingAccountItemCell";
@@ -19,8 +22,8 @@
         if (!cell) {
             cell = [[XMSettingAccountCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellKey];
         }
-        FMSettingViewModel *vm = [[FMSettingViewModel alloc]initCellModelWithTitile:[NSString stringWithFormat:@"%ld",(long)account]];
-        vm.attributeStr = [NSString stringWithFormat:@"%ld",(long)account];
+        FMSettingViewModel *vm = [[FMSettingViewModel alloc]initCellModelWithTitile:account.name];
+        vm.attributeStr = account.detail;
         [cell setCellUIByData:vm];
         return cell;
     };
@@ -50,7 +53,7 @@
 
 - (NSArray<XMSettingSection *> *)settingSections
 {
-    __weak __typeof(self)weakSelf = self;
+//    __weak __typeof(self)weakSelf = self;
     
 
     XMSettingTextItem *my = [XMSettingTextItem itemWithTitle:@"我的邮箱" action:^{
@@ -63,17 +66,31 @@
     NSMutableArray *secondItems = [NSMutableArray array];
     
     
-    for (int i = 0; i < 3; i++) {
-        XMSettingAccountItem *item = [XMSettingAccountItem itemWithAccount:(i * 100) action:^{
-            NSLog(@"打印账号 -- %d",i * 100);
-        }];
-        [secondItems addObject:item];
-    }
+    FMAccount *account1 = [[FMAccount alloc]init];
+    account1.name = @"760625430";
+    account1.detail = @"760625430@qq.com";
+    
+    FMAccount *account2 = [[FMAccount alloc]init];
+    account2.name = @"ios.test";
+    account2.detail = @"ios.test@qq.com";
+    
+    FMAccount *account3 = [[FMAccount alloc]init];
+    account3.name = @"zcb119";
+    account3.detail = @"zcb119@qq.com";
+    
+    [secondItems addObject:[XMSettingAccountItem itemWithAccount:account1 action:^{
+    }]];
+    [secondItems addObject:[XMSettingAccountItem itemWithAccount:account2 action:^{
+    }]];
+    [secondItems addObject:[XMSettingAccountItem itemWithAccount:account3 action:^{
+    }]];
+    
     XMSettingSection *second = [[XMSettingSection alloc]init];
     second.settingItems = secondItems;
     
     XMSettingTextItem *settingItem = [XMSettingTextItem itemWithTitle:@"功能设置" action:^{
-        NSLog(@"功能设置");
+        XMSettingRootViewController *vc = [[XMSettingRootViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
     }];
     
     XMSettingSection *third = [[XMSettingSection alloc]init];

@@ -76,7 +76,9 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), .1)];
-    _tableView.backgroundColor = [UIColor systemGray4Color];
+    _tableView.backgroundColor = [UIColor systemGray6Color];
+    _tableView.sectionHeaderHeight = 10;
+    _tableView.sectionFooterHeight = 10;
 //    _tableView.
     [self.view addSubview:_tableView];
     

@@ -33,7 +33,7 @@
 {
     _avatarView = [[UIImageView alloc]init];
     _avatarView.layer.masksToBounds = YES;
-    _avatarView.layer.cornerRadius = 5;
+    _avatarView.layer.cornerRadius = 8;
     
     _titleLabel = [[UILabel alloc]init];
     _titleLabel.font = [UIFont systemFontOfSize:15];
@@ -56,7 +56,7 @@
     
     _titleLabel.frame = CGRectMake(CGRectGetMaxX(_avatarView.frame) + space, space, 200, 20);
     
-    _detailLabel.frame = CGRectMake(CGRectGetMinX(_titleLabel.frame), CGRectGetMaxY(_titleLabel.frame) + 5, CGRectGetWidth(_titleLabel.frame), 15);
+    _detailLabel.frame = CGRectMake(CGRectGetMinX(_titleLabel.frame), CGRectGetMaxY(_titleLabel.frame) + 5, CGRectGetWidth(_titleLabel.frame), 12);
 }
 
 - (void)setCellUIByData:(FMSettingViewModel *)vm

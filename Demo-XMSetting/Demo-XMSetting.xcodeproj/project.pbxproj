@@ -21,6 +21,7 @@
 		51DBE22C25E77E8C00D49CAB /* FMSettingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBE22B25E77E8C00D49CAB /* FMSettingViewModel.m */; };
 		51DBE23325E7817F00D49CAB /* XMCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBE23225E7817F00D49CAB /* XMCommonTableViewCell.m */; };
 		51DBE26125E7D5FB00D49CAB /* XMSettingAccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBE26025E7D5FB00D49CAB /* XMSettingAccountCell.m */; };
+		51DBE27325E89EF400D49CAB /* FMAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 51DBE27225E89EF400D49CAB /* FMAccount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		51DBE23225E7817F00D49CAB /* XMCommonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMCommonTableViewCell.m; sourceTree = "<group>"; };
 		51DBE25F25E7D5FB00D49CAB /* XMSettingAccountCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMSettingAccountCell.h; sourceTree = "<group>"; };
 		51DBE26025E7D5FB00D49CAB /* XMSettingAccountCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMSettingAccountCell.m; sourceTree = "<group>"; };
+		51DBE27125E89EF400D49CAB /* FMAccount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMAccount.h; sourceTree = "<group>"; };
+		51DBE27225E89EF400D49CAB /* FMAccount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMAccount.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,32 +165,8 @@
 				51DBE21825E7546200D49CAB /* XMSettingHomeViewController.m */,
 				51DBE22025E7547A00D49CAB /* XMSettingRootViewController.h */,
 				51DBE22125E7547A00D49CAB /* XMSettingRootViewController.m */,
-				51DBE21425E753F800D49CAB /* Privacy */,
-				51DBE21525E7540900D49CAB /* General */,
-				51DBE21625E7541400D49CAB /* Email */,
 			);
 			path = Root;
-			sourceTree = "<group>";
-		};
-		51DBE21425E753F800D49CAB /* Privacy */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Privacy;
-			sourceTree = "<group>";
-		};
-		51DBE21525E7540900D49CAB /* General */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = General;
-			sourceTree = "<group>";
-		};
-		51DBE21625E7541400D49CAB /* Email */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Email;
 			sourceTree = "<group>";
 		};
 		51DBE22925E77E5D00D49CAB /* Model */ = {
@@ -195,6 +174,8 @@
 			children = (
 				51DBE22A25E77E8C00D49CAB /* FMSettingViewModel.h */,
 				51DBE22B25E77E8C00D49CAB /* FMSettingViewModel.m */,
+				51DBE27125E89EF400D49CAB /* FMAccount.h */,
+				51DBE27225E89EF400D49CAB /* FMAccount.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -347,6 +328,7 @@
 				51DBE1E525E751DB00D49CAB /* main.m in Sources */,
 				51DBE26125E7D5FB00D49CAB /* XMSettingAccountCell.m in Sources */,
 				51DBE20F25E753AB00D49CAB /* XMSettingViewController.m in Sources */,
+				51DBE27325E89EF400D49CAB /* FMAccount.m in Sources */,
 				51DBE1D725E751D900D49CAB /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

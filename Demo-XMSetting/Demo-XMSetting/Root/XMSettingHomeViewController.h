@@ -8,10 +8,11 @@
 #import "XMSettingViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
+@class FMAccount;
 
 @interface XMSettingAccountItem : XMSettingItem
 
-+ (XMSettingAccountItem *)itemWithAccount:(NSInteger )account action:(void (^)())action;
++ (XMSettingAccountItem *)itemWithAccount:(FMAccount *)account action:(void (^)())action;
 
 @end
 
