@@ -21,7 +21,7 @@
 {
     
     XMSettingTextItem *pushItem = [XMSettingTextItem itemWithTitle:@"新邮件提醒" action:^{
-        
+        //实现对应action
     }];
     
     XMSettingSection *first = [[XMSettingSection alloc]init];
