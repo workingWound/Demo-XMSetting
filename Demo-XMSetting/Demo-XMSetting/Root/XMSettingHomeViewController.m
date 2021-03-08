@@ -34,6 +34,10 @@
         }
     };
     
+    item.heightForRow = ^CGFloat(UITableView * _Nonnull tableView, NSIndexPath * _Nonnull indexPath) {
+        return 50;
+    };
+    
     return item;
 }
 
